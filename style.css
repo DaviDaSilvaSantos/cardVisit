@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --branco: rgb(255,255,255);
+    --preto: rgb(0,0,0);
+    --azul: rgb(102,250,250);
+}
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+button {
+    margin: 1.5vh;
+    padding: 5vh;
+    border: none;
+    border-radius: 5vh;
+    color: var(--preto);
+    background-color: var(--azul);
+    box-shadow: 0 0 40px var(--azul);
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer {
+    margin: 5vh;
+}
+
+span {
+    font-weight: bold;
+}
+
+span:hover {
+    text-shadow: 0 0 15px var(--branco);
+}
