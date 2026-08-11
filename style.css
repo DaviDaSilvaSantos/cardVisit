@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --branco: rgb(255,255,255);
-    --preto: rgb(0,0,0);
-    --azul: rgb(102,250,250);
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --azul: rgb(102, 250, 250);
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
@@ -14,36 +17,144 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     text-align: center;
     background-color: var(--preto);
     color: var(--branco);
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    max-width: 320px;
 }
 
 button {
-    margin: 1.5vh;
-    padding: 5vh;
+    width: 100%;
+    margin: 10px 0;
+    padding: 18px 24px;
     border: none;
-    border-radius: 5vh;
+    border-radius: 50px;
     color: var(--preto);
     background-color: var(--azul);
-    box-shadow: 0 0 40px var(--azul);
+    box-shadow: 0 0 25px var(--azul);
     font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
+    transform: scale(1.05);
     cursor: pointer;
+    box-shadow: 0 0 35px var(--azul);
 }
 
 footer {
-    margin: 5vh;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
 
 span {
     font-weight: bold;
+    transition: text-shadow 0.3s ease;
 }
 
 span:hover {
     text-shadow: 0 0 15px var(--branco);
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 14px 18px;
+        font-size: 0.85rem;
+    }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 16px 20px;
+        font-size: 0.95rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    a {
+        max-width: 380px;
+    }
+
+    button {
+        padding: 18px 28px;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    a {
+        max-width: 400px;
+    }
+
+    button {
+        padding: 20px 32px;
+        font-size: 1.05rem;
+    }
+}
+@media (min-width: 1201px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    a {
+        max-width: 420px;
+    }
+
+    button {
+        padding: 20px 35px;
+        font-size: 1.1rem;
+    }
 }
