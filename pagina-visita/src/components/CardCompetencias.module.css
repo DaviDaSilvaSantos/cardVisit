@@ -1,0 +1,35 @@
+/* Aplique em <article>. Estiliza pela POSIÇÃO dos filhos,
+   então funciona mesmo se você trocar h1/h2 por h2/h3. */
+.cartao {
+  height: 100%;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-4px);
+  border-color: var(--destaque);
+}
+
+/* título */
+.cartao > :nth-child(1) {
+  font-size: 1.4rem;
+}
+
+/* subtítulo */
+.cartao > :nth-child(2) {
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--destaque);
+}
+
+/* descrição */
+.cartao > p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
