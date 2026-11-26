@@ -1,0 +1,17 @@
+.lista {
+  display: grid;
+  gap: var(--espaco-6) var(--espaco-7);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem) {
+  .lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

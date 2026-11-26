@@ -1,0 +1,40 @@
+.abas {
+  display: flex;
+  gap: var(--espaco-6);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.aba {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--espaco-2);
+  min-height: 2.75rem;
+  margin-bottom: -1px;
+  padding: var(--espaco-3) 0;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--cor-suave);
+  font: inherit;
+  font-family: var(--fonte-display);
+  font-size: var(--texto-grande);
+  line-height: 1.1;
+  cursor: pointer;
+  transition: color var(--transicao-rapida),
+    border-color var(--transicao-rapida);
+}
+
+.aba:hover {
+  color: var(--cor-texto);
+}
+
+.abaAtiva {
+  color: var(--cor-texto);
+  border-bottom-color: var(--cor-destaque);
+}
+
+.total {
+  color: var(--cor-destaque);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+}

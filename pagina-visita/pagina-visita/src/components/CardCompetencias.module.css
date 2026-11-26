@@ -1,0 +1,39 @@
+.cartao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  height: 100%;
+  padding-top: var(--espaco-4);
+  border-top: 1px solid var(--cor-borda);
+  transition: border-color var(--transicao);
+}
+
+.cartao:hover {
+  border-top-color: var(--cor-destaque);
+}
+
+.numero {
+  color: var(--cor-suave);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+}
+
+.titulo {
+  font-family: var(--fonte-display);
+  font-size: var(--titulo-item);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.subtitulo {
+  color: var(--cor-destaque);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.descricao {
+  margin-top: var(--espaco-2);
+  color: var(--cor-suave);
+}

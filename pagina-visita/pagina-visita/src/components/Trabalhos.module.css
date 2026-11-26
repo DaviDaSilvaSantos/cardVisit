@@ -1,0 +1,48 @@
+.painel {
+  margin-top: var(--espaco-7);
+}
+
+.lista {
+  display: grid;
+  gap: var(--espaco-7) var(--espaco-6);
+  grid-template-columns: 1fr;
+}
+
+.vazio {
+  padding: var(--espaco-7) var(--espaco-5);
+  border: 1px dashed var(--cor-borda-forte);
+  border-radius: var(--raio-pequeno);
+  color: var(--cor-suave);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+  text-align: center;
+}
+
+@media (min-width: 48rem) {
+  .lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destaque {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Reentrada suave ao trocar de aba */
+@media (prefers-reduced-motion: no-preference) {
+  .painel {
+    animation: entrada 400ms var(--transicao) both;
+  }
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

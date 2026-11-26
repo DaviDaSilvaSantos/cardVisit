@@ -1,0 +1,31 @@
+.secao {
+  border-top: 1px solid var(--cor-borda);
+}
+
+.conteudo {
+  width: min(100% - 2 * var(--margem), var(--largura));
+  margin-inline: auto;
+  padding-block: var(--espaco-9);
+}
+
+.cabecalho {
+  display: flex;
+  align-items: baseline;
+  gap: var(--espaco-4);
+  margin-bottom: var(--espaco-7);
+}
+
+.numero {
+  color: var(--cor-destaque);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+  letter-spacing: 0.12em;
+}
+
+.titulo {
+  font-family: var(--fonte-display);
+  font-size: var(--titulo-secao);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}

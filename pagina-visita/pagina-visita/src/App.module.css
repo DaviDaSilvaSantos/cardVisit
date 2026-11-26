@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.main:focus {
+  outline: none;
+}
+
+/* Link para pular direto ao conteúdo (aparece ao receber foco do teclado) */
+.pular {
+  position: absolute;
+  top: -4rem;
+  left: var(--margem);
+  z-index: 20;
+  padding: var(--espaco-3) var(--espaco-4);
+  background: var(--cor-destaque);
+  color: var(--cor-sobre-destaque);
+  font-family: var(--fonte-mono);
+  font-size: var(--texto-pequeno);
+  text-decoration: none;
+  transition: top var(--transicao-rapida);
+}
+
+.pular:focus {
+  top: var(--espaco-3);
+}
